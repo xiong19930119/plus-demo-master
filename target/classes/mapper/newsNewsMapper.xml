@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mybatsedemo.pludemo.news.dao.NewsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.mybatsedemo.pludemo.news.model.News">
+        <id column="NEWS_ID" property="newsId" />
+        <result column="NEWS_TYPE_ID" property="newsTypeId" />
+        <result column="LEADER_ID" property="leaderId" />
+        <result column="NEWS_TITLE" property="newsTitle" />
+        <result column="TITLE_PIC_STORE_PATH" property="titlePicStorePath" />
+        <result column="NEWS_URL" property="newsUrl" />
+        <result column="NEWS_LOCAL_URL" property="newsLocalUrl" />
+        <result column="CREATE_DATE" property="createDate" />
+        <result column="MODIFY_DATE" property="modifyDate" />
+        <result column="CREATOR_ID" property="creatorId" />
+        <result column="CREATOR_NAME" property="creatorName" />
+        <result column="AUDITOR_ID" property="auditorId" />
+        <result column="AUDITOR_NAME" property="auditorName" />
+        <result column="PICS" property="pics" />
+        <result column="NEWS_CONTENT" property="newsContent" />
+        <result column="AT_TOP" property="atTop" />
+        <result column="AT_HOT" property="atHot" />
+        <result column="SLIDE_SHOW" property="slideShow" />
+        <result column="VIEW_COUNT" property="viewCount" />
+        <result column="NEWS_STATUS" property="newsStatus" />
+        <result column="NEWS_SOURCE" property="newsSource" />
+        <result column="CREATED_BY" property="createdBy" />
+        <result column="LOCAL_RANGE_STATUS" property="localRangeStatus" />
+        <result column="STATIC_URL" property="staticUrl" />
+        <result column="LOCAL_FILE" property="localFile" />
+        <result column="PUSHED" property="pushed" />
+        <result column="PUSH_DATE" property="pushDate" />
+        <result column="NEWS_ABSTRACT" property="newsAbstract" />
+        <result column="WE_CHAT_URL" property="weChatUrl" />
+        <result column="DRAFT_STATUS" property="draftStatus" />
+        <result column="REF_NEWS_TYPE_ID" property="refNewsTypeId" />
+        <result column="NEWS_SLIDER_ORDER" property="newsSliderOrder" />
+        <result column="SUB_NEWS_TITLE" property="subNewsTitle" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        NEWS_ID, NEWS_TYPE_ID, LEADER_ID, NEWS_TITLE, TITLE_PIC_STORE_PATH, NEWS_URL, NEWS_LOCAL_URL, CREATE_DATE, MODIFY_DATE, CREATOR_ID, CREATOR_NAME, AUDITOR_ID, AUDITOR_NAME, PICS, NEWS_CONTENT, AT_TOP, AT_HOT, SLIDE_SHOW, VIEW_COUNT, NEWS_STATUS, NEWS_SOURCE, CREATED_BY, LOCAL_RANGE_STATUS, STATIC_URL, LOCAL_FILE, PUSHED, PUSH_DATE, NEWS_ABSTRACT, WE_CHAT_URL, DRAFT_STATUS, REF_NEWS_TYPE_ID, NEWS_SLIDER_ORDER, SUB_NEWS_TITLE
+    </sql>
+
+</mapper>
